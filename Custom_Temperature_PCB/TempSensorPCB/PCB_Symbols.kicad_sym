@@ -2,12 +2,12 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
-	(symbol "Conn_01x08"
+	(symbol "DS1722"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "J1"
-			(at 0 13.97 0)
+		(property "Reference" "U1"
+			(at 0 7.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" ""
-			(at -2.54 5.08 0)
+			(at -1.27 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at -2.54 5.08 0)
+			(at -1.27 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,7 +32,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at -2.54 5.08 0)
+			(at -1.27 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,7 +41,7 @@
 			)
 		)
 		(property "Description" ""
-			(at -2.54 5.08 0)
+			(at -1.27 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49,10 +49,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "Conn_01x08_0_1"
+		(symbol "DS1722_0_1"
 			(rectangle
-				(start -3.81 12.7)
-				(end 3.81 -8.89)
+				(start -8.89 6.35)
+				(end 8.89 -11.43)
 				(stroke
 					(width 0)
 					(type default)
@@ -62,11 +62,19 @@
 				)
 			)
 		)
-		(symbol "Conn_01x08_1_1"
-			(pin no_connect line
-				(at -6.35 10.16 0)
+		(symbol "DS1722_1_1"
+			(text "DS1722"
+				(at 0 -9.906 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin input line
+				(at -11.43 1.27 0)
 				(length 2.54)
-				(name ""
+				(name "V_DDD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -81,10 +89,10 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -6.35 7.62 0)
+			(pin input line
+				(at -11.43 -1.27 0)
 				(length 2.54)
-				(name ""
+				(name "CE"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -100,9 +108,9 @@
 				)
 			)
 			(pin input line
-				(at -6.35 5.08 0)
+				(at -11.43 -3.81 0)
 				(length 2.54)
-				(name "CS"
+				(name "SCLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -118,9 +126,9 @@
 				)
 			)
 			(pin input line
-				(at -6.35 2.54 0)
+				(at -11.43 -6.35 0)
 				(length 2.54)
-				(name "SCK"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -135,10 +143,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -6.35 0 0)
+			(pin output line
+				(at 11.43 -6.35 180)
 				(length 2.54)
-				(name "MISO"
+				(name "SDO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -154,9 +162,9 @@
 				)
 			)
 			(pin input line
-				(at -6.35 -2.54 0)
+				(at 11.43 -3.81 180)
 				(length 2.54)
-				(name "MOSI"
+				(name "SDI"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -172,9 +180,9 @@
 				)
 			)
 			(pin input line
-				(at -6.35 -5.08 0)
+				(at 11.43 -1.27 180)
 				(length 2.54)
-				(name "3.3V"
+				(name "SERMODE"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -190,9 +198,9 @@
 				)
 			)
 			(pin input line
-				(at -6.35 -7.62 0)
+				(at 11.43 1.27 180)
 				(length 2.54)
-				(name "GND"
+				(name "V_DDA"
 					(effects
 						(font
 							(size 1.27 1.27)
